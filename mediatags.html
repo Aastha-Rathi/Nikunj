@@ -10,6 +10,45 @@
         <source src="video.mp4" type="video/mp4">
     </video>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/aj7nhpKTkGY?si=I_rE2JoOdUc_97ej" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" viewBox="0 -30 157 140">
+        <defs>
+        <filter id="outline-indigo">
+        <feMorphology in="SourceAlpha" result="expanded"
+        operator="dilate" radius="3"/>
+        <feFlood flood-color="indigo" result="indi" />
+        <feComposite in ="indi" in2="expanded" operator="in" />
+        <feComposite in="SourceGraphic"/>
+        </filter>
+        
+        <clipPath id='emojiClipPath'> 
+              <text filter="url(#filter)" x="0" y="80" font-family="Helvetica" font-weight="bold" font-size="7em" fill="#000000">🦄</text>
+        </clipPath>
+        </defs>
+          
+        <g filter="url(#outline-indigo)">
+          <rect y="-30" width="157" height="140" fill="white" clip-path='url(#emojiClipPath)'/>
+        </g>
+          
+        </svg>
+
+        <svg ontouchstart="" class="face" width="146.667" height="146.667" viewBox="0 0 38.806 38.806">
+            <!-- the shape of the face -->
+            <ellipse cx="19.089" cy="19.429" rx="18.235" ry="18.39" fill="#fea" stroke="#000" stroke-width=".529"/>
+            <!-- right eyebrow -->
+            <path class="eyebrow" d="M28.57 10.592a3.767 3.767 0 0 0-1.877-1.528c-.775-.285-1.63-.305-2.443-.163a6.348 6.348 0 0 0-1.11.302" fill="none" stroke="#000" stroke-width=".529" stroke-linecap="round"/>
+            <!-- left eyebrow -->
+            <path class="eyebrow" d="M15.436 9.455a5.56 5.56 0 0 0-3.56-.316 5.53 5.53 0 0 0-1.997.948" fill="none" stroke="#000" stroke-width=".529" stroke-linecap="round"/>
+            <!-- nose -->
+            <path class="nose" d="M20.109 21.08a2.22 2.22 0 0 0 .584-1.134 2.22 2.22 0 0 0-.14-1.267 2.194 2.194 0 0 0-1.04-1.098 2.16 2.16 0 0 0-1.425-.164" fill="none" stroke="#000" stroke-width=".529" stroke-linecap="round"/>
+            <!-- right eye -->
+            <circle class="eye eye-right" cx="24.064" cy="13.095" r="1.587"/>
+            <!-- left eye -->
+            <circle class="eye eye-left" cx="14.27" cy="13.095" r="1.587"/>
+            <!-- mouth -->
+            <circle class="mouth" cx="19" cy="30" fill="#000000" r="1"/>
+           </svg>
+
     
 </body>
 </html>
